@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "run-p watch:tailwind start:next",
     "start:next": "next dev",
-    "watch:tailwind": "yarn build:tailwind --watch",
+    "watch:tailwind": "tailwindcss -i styles/tailwind.css -o styles/globals.css --minify --watch",
     "build": "run-s build:tailwind build:next",
     "build:next": "next build",
     "build:tailwind": "tailwindcss -i styles/tailwind.css -o styles/globals.css --minify",
